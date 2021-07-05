@@ -4,6 +4,13 @@ public class MaxFinder {
         Integer max = int1;
         if (int2.compareTo(max) > 0) {
             max = int2;
+
+public class MaxFinder {
+
+    public static <T extends Comparable> T findMax(T value1, T value2, T value3) {
+        T max = value1;
+        if (value2.compareTo(max) > 0) {
+            max = value2;
         }
         if (int3.compareTo(max) > 0) {
             max = int3;
