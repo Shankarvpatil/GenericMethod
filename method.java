@@ -4,6 +4,12 @@ public class MaxFinder {
         Float max = num1;
         if (num2.compareTo(max) > 0) {
             max = num2;
+public class MaxFinder {
+
+    public static <T extends Comparable> T findMax(T value1, T value2, T value3) {
+        T max = value1;
+        if (value2.compareTo(max) > 0) {
+            max = value2;
         }
         if (num3.compareTo(max) > 0) {
             max = num3;
