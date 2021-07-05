@@ -1,4 +1,4 @@
-package com.tushar.max;
+package com.Shankar.max;
 
 public class MaxFinder {
 
