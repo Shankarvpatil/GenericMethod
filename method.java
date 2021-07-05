@@ -1,26 +1,14 @@
 package com.Shankar.max;
-
-public class MaxFinder<E> {
-    E value1;
-    E value2;
-    E value3;
-
-    public MaxFinder(E val1, E val2, E val3) {
-        this.value1 = val1;
-        this.value2 = val2;
-        this.value3 = val3;
-    }
-
-    public <E extends Comparable> E findMax(E value1, E value2, E value3) {
-        E max = value1;
-        if (value2.compareTo(max) > 0) {
-            max = value2;
+public class MaxFinder {
+    public static Integer findMax(Integer int1, Integer int2, Integer int3) {
+        Integer max = int1;
+        if (int2.compareTo(max) > 0) {
+            max = int2;
         }
-        if (value3.compareTo(max) > 0) {
-            max = value3;
+        if (int3.compareTo(max) > 0) {
+            max = int3;
         }
-        System.out.printf("Maximum of %s %s %s is %s \n", value1, value2, value3, max);
+        System.out.printf("Max values of %s %s %s is %s \n", int1, int2, int3, max);
         return max;
     }
-
 }
