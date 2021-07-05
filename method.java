@@ -1,4 +1,9 @@
 package com.Shankar.max;
+public class MaxFinder {
+    public static Integer findMax(Integer int1, Integer int2, Integer int3) {
+        Integer max = int1;
+        if (int2.compareTo(max) > 0) {
+            max = int2;
 
 public class MaxFinder {
 
@@ -7,11 +12,10 @@ public class MaxFinder {
         if (value2.compareTo(max) > 0) {
             max = value2;
         }
-        if (value3.compareTo(max) > 0) {
-            max = value3;
+        if (int3.compareTo(max) > 0) {
+            max = int3;
         }
-        System.out.printf("Maximum of %s %s %s is %s \n", value1, value2, value3, max);
+        System.out.printf("Max values of %s %s %s is %s \n", int1, int2, int3, max);
         return max;
     }
-    
 }
